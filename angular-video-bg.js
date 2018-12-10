@@ -328,7 +328,6 @@
                         duration = player.getDuration();
                     }
                     msDuration = duration * 1000;
-                    console.log('duration', msDuration);
                     videoTimeout = setTimeout(function() {
                         if (scope.playlist) {
                             player.nextVideo();
@@ -399,12 +398,10 @@
                         $player.css('display', 'none');
                         seekToStart(videoObj);
                         if (videoMute || (videoMute && scope.mute)) {
-                            console.log('mute');
                             if (!player.isMuted()) {
                                 player.mute();
                             }
                         } else if (!videoMute || !scope.mute) {
-                            console.log('unmute');
                             if (player.isMuted()) {
                                 player.unMute();
                             }
