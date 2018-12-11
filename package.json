@@ -1,6 +1,7 @@
 {
   "name": "@flagbit/angular-video-background",
-  "version": "0.3.4",
+  "version": "0.4.1",
+  "main": "angular-video-bg.js",
   "devDependencies": {
     "grunt": "~0.4",
     "grunt-contrib-clean": "~0.5",
